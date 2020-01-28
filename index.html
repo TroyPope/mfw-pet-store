@@ -9,8 +9,123 @@
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+	<!-- NAV BAR SECTION -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-8 col-sm-4 col-md-6 centered">
+				<img src="img/petstore_logo.png" alt="pet store logo" class="pull-left logo">
+				<h1 class="pull-left text-center">Pet Store</h1>
+			</div>
+			<nav class="col-xs-12 col-sm-7 col-md-6">
+				<ul class="nav nav-pills pull-right">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="#">Products</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<!-- END NAV BAR SECTION -->
+	<!-- Jumbotron/Hero Section -->
+	<div class="jumbotron">
+		<div class="container text-center text-uppercase">
+			<h2>The products they love. Prices that you like.</h2>
+		</div>
+	</div>
+	<!-- End Jumbotron/Hero Section -->
+	<!-- Feature/Aside Section -->
+	<section class="container">
+		<div class="row">
+			<!-- Feature -->
+			<!-- 
+				.col-sm-7.text-justify.featured>(h2.text-uppercase{Featured}+p{lorem15}+(.row>(.col-sm-4.product>.row>(.col-sm-12.col-xs.6.img_box>img.img-responsive[src="img/product$.jpg"][alt=""])+(.col-sm-12.col-xs.6>h4{Toy}+p{lorem10}+button.btn.btn-xs.center-block{Purchase Now}))*3))*1 
+			-->
+			<div class="col-sm-7 text-justify featured">
+				<h2 class="text-uppercase">Featured</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae odit esse quidem enim ipsam quae.</p>
+				<div class="row">
+					<div class="col-sm-4 product">
+						<div class="row">
+							<div class="col-sm-12 col-xs 6 img_box"><img src="img/product1.jpg" alt="" class="img-responsive"></div>
+							<div class="col-sm-12 col-xs 6">
+								<h4>Dog Bowl</h4>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, neque!					
+								</p>
+								<button class="btn btn-xs center-block">Purchase Now</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 product">
+						<div class="row">
+							<div class="col-sm-12 col-xs 6 img_box"><img src="img/product2.jpg" alt="" class="img-responsive"></div>
+							<div class="col-sm-12 col-xs 6">
+								<h4>Cat Toy</h4>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, et.</p>
+								<button class="btn btn-xs center-block">Purchase Now</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 product">
+						<div class="row">
+							<div class="col-sm-12 col-xs 6 img_box"><img src="img/product3.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="col-sm-12 col-xs 6">
+								<h4>Parrot Toy</h4>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, et.!</p>
+								<button class="btn btn-xs center-block">Purchase Now</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Feature Ends -->
+			<!-- Aside -->
+			<!-- 
+				aside.col-sm-3.col-sm-offest-2>h2.text-center.text-uppercase{Services}+(ul.nav.nav-pills.nav-stacked.text-center>(li[role="presentation"]>a.text-uppercase{Adopt a }+p{lorem8})*3)*1 
+			-->
+			<aside class="col-sm-3 col-sm-offest-2">
+				<h2 class="text-center text-uppercase">Services</h2>
+				<ul class="nav nav-pills nav-stacked text-center">
+					<li role="presentation">
+						<a href="" class="text-uppercase">Adopt a Cat</a>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</li>
+					<li role="presentation">
+						<a href="" class="text-uppercase">Adopt a Dog</a>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</li>
+					<li role="presentation">
+						<a href="" class="text-uppercase">Adopt a Fish</a>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</li>
+				</ul>
+			</aside>
+			<!-- Aside Ends -->
+		</div>
+	</section>
+	<!-- End Feature/Aside Section -->
+	<!-- Footer Section -->
+	<!-- footer.container-fluid>.row.centered>(.col-xs-6.col-sm-1.col-sm-offset-1>img.logo[src="img/petstore_logo.png"][alt="Pet store logo"])+(.col-xs-6.col-sm-3.col-sm-offset-1.contact_info>(address>(a.[href="#"]{Pet Store}>br>{Fresno, CA})+a{info@petstore.com}))+(col-sm-2.social>(a[href="#"]>i.fab.fa-+span.hidden-xs)*3) -->
+	<footer class="container-fluid">
+		<div class="row centered">
+			<div class="col-xs-6 col-sm-1 col-sm-offset-1"><img src="img/petstore_logo.png" alt="Pet store logo" class="logo"></div>
+			<div class="col-xs-6 col-sm-3 col-sm-offset-1 contact_info">
+				<address><a href="#" class="">Pet Store<br>Fresno, CA</a><a href="">info@petstore.com</a></address>
+			</div>
+			<col-sm-2 class="social">
+				<a href="#"><i class="fab fa-"></i><span class="hidden-xs"></span></a>
+				<a href="#"><i class="fab fa-"></i><span class="hidden-xs"></span></a>
+				<a href="#"><i class="fab fa-"></i><span class="hidden-xs"></span></a>
+			</col-sm-2>
+		</div>
+	</footer>
 
-	<!-- scripts -->
+
+
+
+
+	<!-- End Footer Section -->
+<!-- scripts -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </body>
